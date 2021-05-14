@@ -1,0 +1,37 @@
+/**
+ * @version 1.0.0
+ */
+
+
+
+
+/** text color */
+.text-blue      { color: var(--bs-blue     )  ; }
+.text-indigo    { color: var(--bs-indigo   )  ; }
+.text-purple    { color: var(--bs-purple   )  ; }
+.text-pink      { color: var(--bs-pink     )  ; }
+.text-red       { color: var(--bs-red      )  ; }
+.text-orange    { color: var(--bs-orange   )  ; }
+.text-yellow    { color: var(--bs-yellow   )  ; }
+.text-green     { color: var(--bs-green    )  ; }
+.text-teal      { color: var(--bs-teal     )  ; }
+.text-cyan      { color: var(--bs-cyan     )  ; }
+.text-white     { color: var(--bs-white    )  ; }
+.text-gray      { color: var(--bs-gray     )  ; }
+.text-gray-dark { color: var(--bs-gray-dark)  ; }
+
+
+/** background color */
+.bg-blue      { background-color: var(--bs-blue     )  ; }
+.bg-indigo    { background-color: var(--bs-indigo   )  ; }
+.bg-purple    { background-color: var(--bs-purple   )  ; }
+.bg-pink      { background-color: var(--bs-pink     )  ; }
+.bg-red       { background-color: var(--bs-red      )  ; }
+.bg-orange    { background-color: var(--bs-orange   )  ; }
+.bg-yellow    { background-color: var(--bs-yellow   )  ; }
+.bg-green     { background-color: var(--bs-green    )  ; }
+.bg-teal      { background-color: var(--bs-teal     )  ; }
+.bg-cyan      { background-color: var(--bs-cyan     )  ; }
+.bg-white     { background-color: var(--bs-white    )  ; }
+.bg-gray      { background-color: var(--bs-gray     )  ; }
+.bg-gray-dark { background-color: var(--bs-gray-dark)  ; }

@@ -1,0 +1,36 @@
+/**
+ * @version 1.0.0
+ */
+
+
+
+ .breadcrumb-1 { 
+  --breadcrumb-1-color: var(--bs-purple);
+  --breadcrumb-1-color-hover: darkblue;
+  --breadcrumb-1-color-active: darkblue;
+
+  list-style: none;
+  display: inline-block; 
+}
+.breadcrumb-1 li { float: left; }
+
+/** default color */
+.breadcrumb-1 li .element { color: #FFF; display: block; background: var(--breadcrumb-1-color); text-decoration: none; position: relative; height: 40px; line-height: 40px; padding: 0 10px 0 5px; text-align: center; margin-right: 23px; }
+.breadcrumb-1 li .element:before, .breadcrumb-1 li .element:after { content: ""; position: absolute; top: 0; border: 0 solid var(--breadcrumb-1-color); border-width: 20px 10px; width: 0; height: 0; }
+.breadcrumb-1 li .element:after { left: 100%; border-color: transparent; border-left-color: var(--breadcrumb-1-color); }
+
+.breadcrumb-1 li:first-child .element { padding-left: 15px; border-radius: 4px 0 0 4px; }
+.breadcrumb-1 li:first-child .element:before { border: none; }
+.breadcrumb-1 li:last-child .element { padding-right: 15px; border-radius: 0 4px 4px 0; }
+.breadcrumb-1 li:last-child .element:after { border: none; }
+.breadcrumb-1 li .element:before { left: -20px; border-left-color: transparent; }
+
+/** hover color */
+.breadcrumb-1 li .element:hover { background-color: var(--breadcrumb-1-color-hover); }
+.breadcrumb-1 li .element:hover:before { border-color: var(--breadcrumb-1-color-hover); border-left-color: transparent; }
+.breadcrumb-1 li .element:hover:after { border-left-color: var(--breadcrumb-1-color-hover); }
+
+/** active color */
+.breadcrumb-1 li .active { background-color: var(--breadcrumb-1-color-active) !important; }
+.breadcrumb-1 li .active:before { border-color: var(--breadcrumb-1-color-active) !important; border-left-color: transparent !important; }
+.breadcrumb-1 li .active:after { border-left-color: var(--breadcrumb-1-color-active) !important; }

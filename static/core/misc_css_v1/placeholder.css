@@ -1,0 +1,31 @@
+/**
+ * @version 1.0.0
+ */
+
+
+
+
+
+
+/** placeholder text color */
+.placeholder-text-blue::placeholder      { color: var(--bs-blue     ) ; }
+.placeholder-text-indigo::placeholder    { color: var(--bs-indigo   ) ; }
+.placeholder-text-purple::placeholder    { color: var(--bs-purple   ) ; }
+.placeholder-text-pink::placeholder      { color: var(--bs-pink     ) ; }
+.placeholder-text-red::placeholder       { color: var(--bs-red      ) ; }
+.placeholder-text-orange::placeholder    { color: var(--bs-orange   ) ; }
+.placeholder-text-yellow::placeholder    { color: var(--bs-yellow   ) ; }
+.placeholder-text-green::placeholder     { color: var(--bs-green    ) ; }
+.placeholder-text-teal::placeholder      { color: var(--bs-teal     ) ; }
+.placeholder-text-cyan::placeholder      { color: var(--bs-cyan     ) ; }
+.placeholder-text-white::placeholder     { color: var(--bs-white    ) ; }
+.placeholder-text-gray::placeholder      { color: var(--bs-gray     ) ; }
+.placeholder-text-gray-dark::placeholder { color: var(--bs-gray-dark) ; }
+.placeholder-text-primary::placeholder   { color: var(--bs-primary  ) ; }
+.placeholder-text-secondary::placeholder { color: var(--bs-secondary) ; }
+.placeholder-text-success::placeholder   { color: var(--bs-success  ) ; }
+.placeholder-text-info::placeholder      { color: var(--bs-info     ) ; }
+.placeholder-text-warning::placeholder   { color: var(--bs-warning  ) ; }
+.placeholder-text-danger::placeholder    { color: var(--bs-danger   ) ; }
+.placeholder-text-light::placeholder     { color: var(--bs-light    ) ; }
+.placeholder-text-dark::placeholder      { color: var(--bs-dark     ) ; }
