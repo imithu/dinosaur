@@ -1,5 +1,13 @@
 # dinosaur
 
+## Preview
+Desktop\
+![desktop](docs_github/Home-Dinosaur-desktop.png)
+Phone\
+![phone](docs_github/Home-Dinosaur-phone.png)
+
+
+
 ## Build Setup
 
 ```bash
