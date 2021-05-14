@@ -1,52 +1,87 @@
-export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+let APP_NAME    = 'Dinosaur';
+let APP_URL     = "";
+let APP_URL_API = "";
 
-  // Target: https://go.nuxtjs.dev/config-target
+
+export default {
+  ssr: false,
   target: 'static',
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'dinosaur',
+    title: APP_NAME,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // header
+        // bootstrap
+          { rel: 'stylesheet', href: '/core/bootstrap_v5_0_1/css/bootstrap.min.css' },
+          { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css' },
+        // misc_css
+          { rel: 'stylesheet', href: '/core/misc_css_v1/breadcrumb.css' },
+          { rel: 'stylesheet', href: '/core/misc_css_v1/color.css' },
+          { rel: 'stylesheet', href: '/core/misc_css_v1/cursor.css' },
+          { rel: 'stylesheet', href: '/core/misc_css_v1/fonts.css' },
+          { rel: 'stylesheet', href: '/core/misc_css_v1/hover.css' },
+          { rel: 'stylesheet', href: '/core/misc_css_v1/placeholder.css' },
+        // google fonts
+          { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+          { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Bonbon&family=Monoton&display=swap' },
+    ],
+    script: [
+      // footer
+        // bootstrap
+          { src: "/core/bootstrap_v5_0_1/js/bootstrap.bundle.min.js", body: true },
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
+
   pwa: {
+    icon: {
+      srcDir: '/icon.png'
+    },
     manifest: {
-      lang: 'en'
+      name: APP_NAME,
+      lang: 'en',
+      background_color: '#0d6efd',
+      theme_color: '#0d6efd'
+    },
+    // workbox: {
+    //   enabled: true
+    // },
+    meta: {
+      theme_color: '#0d6efd' 
     }
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+
   build: {
+  },
+
+
+  publicRuntimeConfig: {
+    env: {
+      APP_NAME: APP_NAME,
+      APP_TITLE: " || "+APP_NAME,
+      APP_URL,
+      APP_URL_API,
+    }
   }
 }
