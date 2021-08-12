@@ -41,7 +41,7 @@
     },
     data(){
       return {
-        publish_datetime: '+00:00 2021-08-14 14:29:47',    // +00:00 2021-06-28 22:53:52
+        publish_datetime: '+00:00 2025-12-11 20:00:00',    // +00:00 2021-06-28 22:53:52
         format: 'Z YYYY-MM-DD HH:mm:ss',
 
         remaining_day:    0,
